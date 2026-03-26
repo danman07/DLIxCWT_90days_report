@@ -586,6 +586,30 @@
       .grid-2 .sub-label { font-size: 9px; }
       .grid-2 .simple-list li { font-size: 11px; }
     }
+
+    /* ── Report Heading ── */
+    .report-heading {
+      text-align: center;
+      margin-bottom: clamp(24px, 4vw, 36px);
+      margin-top: clamp(8px, 2vw, 16px);
+    }
+    .report-heading h2 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    /* ── Mobile subtitle: "Last 90 Days" label ── */
+    .mobile-subtitle { display: none; }
+    @media (max-width: 480px) {
+      .mobile-subtitle {
+        display: block;
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -598,6 +622,7 @@
       <div class="brand-text">
         <h1>Dream League of India</h1>
         <p>Social Media Report · Last 3 Months</p>
+        <p class="mobile-subtitle">Social Media Report - Last 90 Days</p>
       </div>
     </div>
 
@@ -633,6 +658,11 @@
   <main>
 
 
+
+    <!-- ── REPORT HEADING ── -->
+    <div class="report-heading">
+      <h2>Social Media Report - Last 90 Days</h2>
+    </div>
 
     <!-- ── INSTAGRAM ── -->
     <section id="instagram" class="section">
